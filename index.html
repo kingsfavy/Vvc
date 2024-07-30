@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+      <body onload="adjustColorsBasedOnTime()">
+<div id="app">
+<div class="main-nav">
+<div class="GT">
+<img src="pic.jpeg" alt="Your Image Description" class="logo"/>
+<h5 id ="nav"><span id="greeting"></span>what page would you like to navigate to..</h5>
+</div>
+      <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="show-gt">Home</a></li>
+                <li><a href="#about" class="show-gt">About</a></li>
+                <li><a href="#portfolio" class="show-gt">Portfolio</a></li>
+                <li><a href="#blog" class="show-gt">Blog</a></li>
+                <li><a href="#contact" class="show-gt">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+</div>
+
+
+<div class="whole">
+<div style="height:50px;"></div>
+<section id="home">
+    <div class="hero reveal fade-left">
+        <h1> Kingsley Effiong </h1>
+        <img src="pic.jpeg" alt="Your Image Description" class="hero-image">
+
+<div style="height:50px;"></div>
+
+        <p class="tagline">Crafting Digital Experiences</p>
+        <a href="#works" class="btn">Explore My Work</a>
+    </div>
+</section>
+
+<div style="height:50px;"></div>
+
+    <section id="about">
+        <div class="about reveal fade-left">
+            <h2>About Me</h2>
+            <p id="about-me">I'm a dynamic individual with a passion for making a positive impact in the community. With a strong dedication to continuous learning and personal growth, i strives to excel in both my professional and personal endeavors. i'm a proficient coder, skilled in HTML, CSS, JavaScript, and Node.js, with a keen interest in web development and technology. my commitment to excellence is evident in his work ethic and his ability to inspire those around me. In my free time, i enjoy exploring new places, indulging in my love for photography, and connecting with friends and family. With my positive attitude, determination, and coding expertise, I'm  poised to achieve great things and leave a lasting legacy in the tech industry.</p>
+<br>
+<p>I studied AiCE at ALX, various kinds of AI and their application in fields of businesses. such as</p>
+<br><br>
+<nav>
+<ul style="font-weight:bolder;">
+<li>Infogram</li>
+<li>Machinetable</li>
+<li>Udio</li>
+<li>Canva</li>
+</ul>
+</nav>
+
+<div style="height:50px;"></div>
+
+<img src="cert.png" id ="cert" onclick = "openCert()" class="hero-image">
+
+<div style="height:50px;"></div>
+
+<p>navigate to the <b>Portfolio page</b> to view my projects on ALX. 🙂</p>
+<br><br>
+<p>Here is my Resume. Tap on the image to view my resume</p>
+<br><br>
+<img src="resume.jpeg"  id="res" class="hero-image" onclick="openModal()"/>
+        </div>
+    </section>
+
+<div style="height:50px;"></div>
+
+<section id="hobbies">
+    <div class="hobbies reveal fade-left">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Coding and Web Development</li>
+            <li>Reading</li>
+            <li>Traveling</li>
+            <li>Photography</li>
+            <!-- Add more hobbies as needed -->
+        </ul>
+    </div>
+</section>
+
+<div style="height:50px;"></div>
+
+<section id="skills">
+    <div class="skills reveal fade-left">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <!-- Add more frontend skills as needed -->
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>React</li>
+                    <!-- Add more backend skills as needed -->
+                </ul>
+            </div>
+            <!-- Add more skill categories and skills as needed -->
+        </div>
+    </div>
+</section>
+
+<div style="height:50px;"></div>
+
+<section id="portfolio">
+    <div class="container reveal fade-left">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+<br>
+
+            <img src= "canva.jpeg" alt="Project 1">
+<br><br>
+            <div class="project-info">
+                <h3>ALX</h3>
+                <p>All toghter my projects on ALX.</p>
+<br>
+                <a href="https://aboutaarah.my.canva.site/kingsley-effiong-portfolio-website-in-white-grey-black-light-classic-minimal-style" class="btn">View Project</a>
+            </div>
+        </div>
+        <div class="portfolio-item">
+
+<div style="height:50px;"></div>
+            </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </div>
+</section>
+
+<div style="height:50px;"></div>
+
+<section id="works">
+    <div class="works reveal fade-left">
+        <h2>My Works</h2>
+
+<!-- <div id="imageDiv"></div> -->
+    <div id="container"></div>
+
+    <div class="work-gallery">
+            <div class="work-item">
+               <h3>3D Image</h3>
+                <p>Make your website stylish and classic just by adding a 3D image in it, take a scenario where that is your company's logo and it's rotating dynamically in your company's website, that would be so mind blowing.. 🤯 </p>
+</div>
+        </div>
+    </div>
+</section>
+
+<div style="height:50px;"></div>
+
+  <section id="blog">
+        <div class="container reveal fade-left">
+            <h2 class="blog-title">Latest Blog Posts</h2>
+            <div id="blogPosts"></div>
+        </div>
+    </section>
+
+<div style="height:50px;"></div>
+
+<section id="contact">
+    <div class="container reveal fade-left">
+   <h2>Contact Me</h2>
+
+<div style="height:50px;"></div>
+
+<h3>effiongkingsley1185@gmail.com</h3>
+</div>
+
+<div style="height:50px;"></div>
+
+        <div class="container reveal fade-left">
+            <h2>Follow Me on Social Media</h2>
+<br>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/fredrick.effiong.35" class="social-icon"><img src="fb.png" alt="Facebook"></a>
+               <a href="https://www.linkedin.com/in/kingsley-effiong-b70992308?trk=contact-info" class="social-icon"><img src="lin.png" alt="Linkedin"></a>
+                <a href="https://x.com/caramelmoon001?s=21" class="social-icon"><img src="x.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/caramelmoon_1?igsh=MTdiNjV2eWc0N3NreQ%3D%3D&utm_source=qr" class="social-icon"><img src="ins.png" alt="Instagram"></a>
+                <a href="https://wa.me/+2349032861602" class="social-icon"><img src="wha.png" alt="Whatsapp"></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+        </div>
+    </section>
+
+<div style="height:50px;"></div>
+
+<div class="back">
+<a href="#home">
+        <button type="button" class="btn">Back to the Top</button></a>
+</div>
+
+<div style="height:50px;"></div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Kingsley Effiong. All rights reserved.</p>
+    </footer>
+</div>
+
+</div>
+  
+
+
+           <div id="modal" class="modal">
+                <div class="modal-content">
+                    <h5 onclick="closeModal()" style=" float:right;">Back</h5>
+<br><br>
+<img src="resume.jpeg"  class="hero-image" id="resume"/>
+
+<div style="height:50px;"></div>
+
+<h4 id="info"></h4>
+<h4 id="tap">Tap the Resume to flip to the next page.</h4>
+
+                </div>
+            </div>
+
+           <div id="modalCert" class="modal">
+                <div class="modal-content">
+                    <h5 onclick="closeCert()" style=" float:right;">Back</h5>
+
+<div style="height:50px;"></div>
+
+<img src="cert.png"  class="hero-image"/>
+             </div>
+            </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   
+    <script src="script.js"></script>
+</body>
+</html>
